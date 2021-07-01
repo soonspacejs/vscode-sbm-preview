@@ -1,0 +1,56 @@
+{
+    "name": "vscode-sbm-preview",
+    "version": "0.2.0",
+    "displayName": "SBM 模型预览",
+    "description": "Preview the SBM specific format model of soonspace in vscode!",
+    "engines": {
+        "vscode": "^1.20.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "keywords": [
+        "soonspace",
+        "soonspacejs",
+        "sbm"
+    ],
+    "publisher": "xuek",
+    "icon": "images/logo.png",
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./src/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "vscode-sbm-preview.previewModel",
+                "title": "预览 SBM 模型"
+            }
+        ],
+        "menus": {
+            "explorer/context": [
+                {
+                    "command": "vscode-sbm-preview.previewModel",
+                    "when": "resourceExtname == .sbm",
+                    "group": "sbm"
+                }
+            ]
+        }
+    },
+    "devDependencies": {
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^7.0.43",
+        "eslint": "^4.11.0",
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6"
+    },
+    "license": "SEE LICENSE IN LICENSE.txt",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/soonspacejs/vscode-sbm-preview"
+    },
+    "homepage": "http://www.soonspacejs.com:8800/plugin/vscode-sbm-preview.html",
+    "dependencies": {
+        "serve-handler": "^6.1.3"
+    }
+}
