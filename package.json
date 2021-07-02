@@ -1,6 +1,6 @@
 {
     "name": "vscode-sbm-preview",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "displayName": "SBM 模型预览",
     "description": "Preview the SBM specific format model of soonspace in vscode!",
     "engines": {
